@@ -23,23 +23,23 @@
         // Calculate total width of all cards and gaps
         const cardWidth = 240; // min-width of .member-card
         const gap = 32;
-        const totalWidth = (cardWidth + gap) * boardMembers.length - gap + 80; // +80 for padding
+        const totalWidth = (cardWidth * boardMembers.length) + (gap * (boardMembers.length - 1)) + 80;
 
         // Set the width of the members container to the total
         membersContainer = document.querySelector('.members-container');
-        gsap.set(membersContainer, { width: totalWidth });
+        gsap.set(membersContainer, { width: totalWidth});
 
         // Create horizontal scroll effect
         gsap.to(membersContainer, {
-            x: () => -(totalWidth - window.innerWidth),
+            x: () => -(totalWidth-800),
             ease: "none",
             scrollTrigger: {
                 trigger: ".board-section",
                 start: "top 20%",
-                end: "bottom middle",
+                end: "+=3000",
                 scrub: 2,
                 pin: true,
-                markers: false,
+                markers: true,
             }
         });
     });
