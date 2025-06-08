@@ -1,13 +1,16 @@
 :root {
   --text: #2e3440;
   --background: #cec9bb;
+  --book-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100%' height='100%' fill='%23cec9bb'/%3E%3Cpath d='M10,20 Q20,10 30,20 Q40,30 30,40 Q20,50 10,40 Z' fill='rgba(0,0,0,0.05)'/%3E%3Cpath d='M40,20 Q50,10 60,20 Q70,30 60,40 Q50,50 40,40 Z' fill='rgba(0,0,0,0.05)'/%3E%3Cpath d='M70,20 Q80,10 90,20 Q100,30 90,40 Q80,50 70,40 Z' fill='rgba(0,0,0,0.05)'/%3E%3C/svg%3E");
   --primary: #2C3639;
   --secondary: #c38d63;
   --accent: #48cbd7;
 }
 
 body {
-  background-color: var(--background);
+  background: var(--background) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100%' height='100%' fill='%23cec9bb'/%3E%3Cpath d='M10,20 Q20,10 30,20 Q40,30 30,40 Q20,50 10,40 Z' fill='rgba(0,0,0,0.05)'/%3E%3Cpath d='M40,20 Q50,10 60,20 Q70,30 60,40 Q50,50 40,40 Z' fill='rgba(0,0,0,0.05)'/%3E%3Cpath d='M70,20 Q80,10 90,20 Q100,30 90,40 Q80,50 70,40 Z' fill='rgba(0,0,0,0.05)'/%3E%3C/svg%3E");
+  background-size: 150px 150px;
+  background-attachment: fixed;
   color: var(--text);
   font-family: sans-serif;
   margin: 0;
