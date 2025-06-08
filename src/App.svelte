@@ -10,7 +10,7 @@
 
 <main>
   <div class="fixed-controls">
-    <img src="/static/tnc-logo.png" alt="TNC Logo" class="fixed-logo" />
+    <img src="/static/assets/tnc-logo.png" alt="TNC Logo" class="fixed-logo" />
     <button class="goto-top" on:click={scrollToTop}>↑</button>
   </div>
   <About />
