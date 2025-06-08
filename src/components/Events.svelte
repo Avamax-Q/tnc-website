@@ -1,11 +1,11 @@
 <script>
     export let events = [
-        { title: 'Book of the Month',  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: '/src/static/assets/events/event-1.jpg' },
-        { title: 'Dungeons & Dragons', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/src/static/assets/events/event-2.jpg' },
-        { title: 'Poetry Slam', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/src/static/assets/events/event-3.jpg' },
-        { title: 'Linguistic Crossroads', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/src/static/assets/events/event-4.jpg' },
-        { title: 'Author Meets', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/src/static/assets/events/event-5.jpg' },
-        { title: 'Event 6 idfk', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/src/static/assets/events/event-6.jpg' }
+        { title: 'Book of the Month',  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: '/static/assets/events/event-1.jpg' },
+        { title: 'Dungeons & Dragons', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/static/assets/events/event-2.jpg' },
+        { title: 'Poetry Slam', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/static/assets/events/event-3.jpg' },
+        { title: 'Linguistic Crossroads', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/static/assets/events/event-4.jpg' },
+        { title: 'Author Meets', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/static/assets/events/event-5.jpg' },
+        { title: 'Event 6 idfk', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', image: '/static/assets/events/event-6.jpg' }
     ];
 </script>
 
