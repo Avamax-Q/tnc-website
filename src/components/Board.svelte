@@ -14,7 +14,8 @@
         { name: 'Shriram', role: 'Publicity', image: '/static/assets/board/board-7.png' },
         { name: 'Krishna', role: 'Creative', image: '/static/assets/board/board-8.png' },
         { name: 'Joshua', role: 'Outreach', image: '/static/assets/board/board-9.png' },
-        { name: 'Leo', role: 'Design', image: '/static/assets/board/board-10.png' }
+        { name: 'Leo', role: 'Design', image: '/static/assets/board/board-10.png' },
+        {type: 'see-more'}
     ];
 
     let membersContainer;
@@ -31,7 +32,7 @@
 
         // Create horizontal scroll effect
         gsap.to(membersContainer, {
-            x: () => -(totalWidth-800),
+            x: () => -(totalWidth-700),
             ease: "none",
             scrollTrigger: {
                 trigger: ".board-section",
@@ -50,18 +51,61 @@
     <div class="board-scroll-container">
         <div class="members-container">
             {#each boardMembers as member}
-                <div class="member-card">
-                    <img src={member.image} alt={member.name} class="member-image" />
-                    <h3>{member.name}</h3>
-                    <p>{member.role}</p>
-                </div>
+                {#if member.type === 'see-more'}
+                    <div class="member-card see-more-card">
+                        <a href="/boardDepth" class="see-more-link">
+                            <h3>See More</h3>
+                            <p>Learn more about our board</p>
+                            <div class="arrow">→</div>
+                        </a>
+                    </div>
+                {:else}
+                    <div class="member-card">
+                        <img src={member.image} alt={member.name} class="member-image" />
+                        <h3>{member.name}</h3>
+                        <p>{member.role}</p>
+                    </div>
+                {/if}
             {/each}
         </div>
     </div>
 </section>
 
 <style>
-    .board-section {
+    .see-more-card {
+        background: var(--secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .see-more-link {
+        text-decoration: none;
+        color: var(--background);
+        text-align: center;
+        padding: 20px;
+    }
+
+    .see-more-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+    .arrow {
+        font-size: 2rem;
+        margin-top: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .see-more-card:hover {
+        background: var(--accent);
+    }
+
+    .see-more-card:hover .arrow {
+        transform: translateX(10px);
+    }
+        .board-section {
         padding: 80px 40px;
         background: var(--background);
         color: var(--text);

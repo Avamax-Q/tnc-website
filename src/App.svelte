@@ -2,6 +2,7 @@
   import About from './components/About.svelte';
   import Board from './components/Board.svelte';
   import Events from './components/Events.svelte';
+  import Blogs from './components/Blogs.svelte';
   import Footer from './components/Footer.svelte';
   function scrollToTop() {
     window.scrollTo({top: 0, behavior: 'smooth'});
@@ -16,6 +17,7 @@
   <About />
   <Board />
   <Events />
+  <Blogs />
   <Footer />
 </main>
 
