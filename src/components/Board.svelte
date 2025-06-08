@@ -52,7 +52,7 @@
         <div class="members-container">
             {#each boardMembers as member}
                 {#if member.type === 'see-more'}
-                    <div class="member-card see-more-card">
+                    <div class="member-card-see-more-card">
                         <a href="/boardDepth" class="see-more-link">
                             <h3>See More</h3>
                             <p>Learn more about our board</p>
@@ -72,8 +72,14 @@
 </section>
 
 <style>
-    .see-more-card {
-        background: var(--secondary);
+    .member-card-see-more-card {
+        border-radius: 12px;
+        padding: 24px 32px;
+        min-width: 240px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        flex-shrink: 0;
+        background: #3b4252;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -87,8 +93,9 @@
         padding: 20px;
     }
 
-    .see-more-card h3 {
-        font-size: 1.5rem;
+    .member-card-see-more-card h3 {
+        font-size: 2rem;
+        color: var(--secondary);
         margin-bottom: 12px;
     }
 
@@ -105,7 +112,8 @@
     .see-more-card:hover .arrow {
         transform: translateX(10px);
     }
-        .board-section {
+
+    .board-section {
         padding: 80px 40px;
         background: var(--background);
         color: var(--text);
