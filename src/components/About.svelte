@@ -16,7 +16,7 @@
 </script>
 
 <section id="about" class="about-section">
-    <img src="../public/assets/tnc-logo.png" alt="TNC Logo" class="logo" />
+    <img src="../public/static/assets/tnc-logo.png" alt="TNC Logo" class="logo" />
     <div class="about-content">
         <h1>The Next Chapter</h1>
         <p>
