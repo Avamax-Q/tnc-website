@@ -5,16 +5,16 @@
     gsap.registerPlugin(ScrollTrigger);
 
     export let boardMembers = [
-        { name: 'Hamsini', role: 'Chairperson', image: '/src/assets/board/board-1.png' },
-        { name: 'Tarun', role: 'Secretary', image: '/src/assets/board/board-2.png' },
-        { name: 'Sam', role: 'Vice-Chair', image: '/src/assets/board/board-3.png' },
-        { name: 'Darsh', role: 'Co-Secretary', image: '/src/assets/board/board-4.png' },
-        { name: 'Aryaman', role: 'Management', image: '/src/assets/board/board-5.png' },
-        { name: 'Akhil', role: 'Editorial', image: '/src/assets/board/board-6.png' },
-        { name: 'Shriram', role: 'Publicity', image: '/src/assets/board/board-7.png' },
-        { name: 'Krishna', role: 'Creative', image: '/src/assets/board/board-8.png' },
-        { name: 'Joshua', role: 'Outreach', image: '/src/assets/board/board-9.png' },
-        { name: 'Leo', role: 'Design', image: '/src/assets/board/board-10.png' }
+        { name: 'Hamsini', role: 'Chairperson', image: '../public/assets/board/board-1.png' },
+        { name: 'Tarun', role: 'Secretary', image: '../public/assets/board/board-2.png' },
+        { name: 'Sam', role: 'Vice-Chair', image: '../public/assets/board/board-3.png' },
+        { name: 'Darsh', role: 'Co-Secretary', image: '../public/assets/board/board-4.png' },
+        { name: 'Aryaman', role: 'Management', image: '../public/assets/board/board-5.png' },
+        { name: 'Akhil', role: 'Editorial', image: '../public/assets/board/board-6.png' },
+        { name: 'Shriram', role: 'Publicity', image: '../public/assets/board/board-7.png' },
+        { name: 'Krishna', role: 'Creative', image: '../public/assets/board/board-8.png' },
+        { name: 'Joshua', role: 'Outreach', image: '../public/assets/board/board-9.png' },
+        { name: 'Leo', role: 'Design', image: '../public/assets/board/board-10.png' }
     ];
 
     let membersContainer;
